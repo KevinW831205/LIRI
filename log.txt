@@ -12,6 +12,12 @@ Event Date: 06/28/2019
 node liri.js concert-this
 please enter an artist or band name
 ----------------------
+node liri.js spotify-this-song viva la vida
+Song Name:Viva La Vida
+Artists: Coldplay
+From Album: Viva La Vida Or Death And All His Friends
+Preview on Spotify: https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b
+----------------------
 node liri.js spotify-this-song
 please enter a song name
 Example: node liri.js spotify-this-song the sign Ace of base   -> will return
@@ -20,11 +26,25 @@ Artists: Ace of Base
 From Album: The Sign (US Album) [Remastered]
 Preview on Spotify: https://open.spotify.com/track/0hrBpAOgrt8RXigk83LLNE
 ----------------------
-node liri.js spotify-this-song viva la vida
-Song Name:Viva La Vida
-Artists: Coldplay
-From Album: Viva La Vida Or Death And All His Friends
-Preview on Spotify: https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b
+node liri.js movie-this frozen
+Frozen
+The movie came out: 2013
+Rated: PG
+IMDB rating: 7.5/10
+Rotten Tomatoes rating: 90%
+The movie was made in: USA
+Summary of Plot: When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
+Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
+----------------------
+node liri.js movie-this matrix
+Matrix
+The movie came out: 1993–
+Rated: N/A
+IMDB rating: 8.2/10
+Rotten Tomatoes Rating: N/A
+The movie was made in: Canada
+Summary of Plot: Steven Matrix is one of the underworld's foremost hitmen until his luck runs out, and someone puts a contract out on him. Shot in the forehead by a .22 pistol, Matrix "dies" and finds ...
+Actors: Nick Mancuso, Phillip Jarrett, Carrie-Anne Moss, John Vernon
 ----------------------
 node liri.js movie-this
 please enter a movie name
@@ -32,19 +52,11 @@ For example: node liri.js movie-this Mr.Nobody  -> will return
 Mr. Nobody
 The movie came out: 2009
 Rated: R
+IMDB rating: 7.8/10
 Rotten Tomatoes rating: 67%
 The movie was made in: Belgium, Germany, Canada, France, USA, UK
 Summary of Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
 Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
-----------------------
-node liri.js movie-this frozen
-Frozen
-The movie came out: 2013
-Rated: PG
-Rotten Tomatoes rating: 90%
-The movie was made in: USA
-Summary of Plot: When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
-Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
 ----------------------
 node liri.js do-what-it-says
 Song Name:I Want It That Way
@@ -56,6 +68,7 @@ node liri.js do-what-it-says
 Frozen
 The movie came out: 2013
 Rated: PG
+IMDB rating: 7.5/10
 Rotten Tomatoes rating: 90%
 The movie was made in: USA
 Summary of Plot: When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.

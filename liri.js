@@ -13,6 +13,7 @@ var main = {
   command: process.argv[2],   //liri command
   movieName: "",
   RTfound: false,
+  IMDBfound: false,
   songName: "",
   songArtists: [],
   artistName: "",
@@ -38,7 +39,7 @@ var main = {
     axios.get(queryUrl).then(function (response) {
       // console.log(response.data);
       // console.log(JSON.stringify(response.data, null, 2));
-      
+
 
       for (var i = 0; i < response.data.length; i++) {
         console.log("Event " + parseInt(i + 1));
@@ -65,12 +66,27 @@ var main = {
       function (response) {
         // console.log(response.data)
         // console log relevant responses
+        // console.log(JSON.stringify(response.data, null, 2));
+
         console.log(response.data.Title);
         main.createLog(response.data.Title);
         console.log("The movie came out: " + response.data.Year)
         main.createLog("The movie came out: " + response.data.Year);
         console.log("Rated: " + response.data.Rated)
         main.createLog("Rated: " + response.data.Rated);
+        //making sure there is an IMDB rating Internet Movie Database
+        for (var i = 0; i < response.data.Ratings.length; i++) {
+          if (response.data.Ratings[i].Source === 'Internet Movie Database') {
+            console.log("IMDB rating: " + response.data.Ratings[i].Value);
+            main.createLog("IMDB rating: " + response.data.Ratings[i].Value);
+            main.IMDBfound = true;
+          }
+          if (!main.IMDBfound) {
+            console.log("IMDB Rating: N/A");
+            main.createLog("IMDB rating: N/A");
+          }
+        }
+
         //making sure there is a Rotten tomatoes rating
         for (var i = 0; i < response.data.Ratings.length; i++) {
           if (response.data.Ratings[i].Source === 'Rotten Tomatoes') {
